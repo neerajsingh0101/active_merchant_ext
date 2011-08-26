@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Neeraj Singh"]
   s.email       = ["neeraj@BigBinary.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{makes it easier to write tests with active_merchant}
+  s.description = %q{makes it easier to write tests with active_merchant}
 
   s.rubyforge_project = "active_merchant_ext"
 
