@@ -1,13 +1,13 @@
 == active_merchant_ext
 
-active_merchant_ext is an [active_merchant]() extension that helps with testing if you are using `AuthorizeNetCimGateway` gateway.
+active_merchant_ext is an active_merchant extension that helps with testing if you are using `AuthorizeNetCimGateway` gateway.
 
 
 == Installation
 
 Add following line to your `Gemfile`.
 
-    gem 'active_merchant_ext', :git => ''
+    gem 'active_merchant_ext', :git => 'git://github.com/neerajdotname/active_merchant_ext.git'
 
 == Usage
 
@@ -25,4 +25,4 @@ Now in test enviroment calls will go to the mocked gateway. Please take a look i
 
 === License
 
-MIT
+MIT License. Copyright 2011 BigBinary. http://BigBinary.com
