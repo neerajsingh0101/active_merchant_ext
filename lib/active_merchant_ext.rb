@@ -13,7 +13,8 @@ module ActiveMerchant
       self.live_url = self.test_url
 
       def create_customer_payment_profile(options)
-        Response.new(true, SUCCESS_MESSAGE, {:customer_payment_profile_id => CUSTOMER_PAYMENT_PROFILE_ID}, {} )
+        Response.new(true, SUCCESS_MESSAGE, {:customer_payment_profile_id => CUSTOMER_PAYMENT_PROFILE_ID,
+        }, {} )
       end
 
       def create_customer_profile(options)
@@ -21,7 +22,7 @@ module ActiveMerchant
       end
 
       def create_customer_profile_transaction(options)
-        Response.new(true, SUCCESS_MESSAGE, options, {} )
+        Response.new(true, SUCCESS_MESSAGE, {'direct_response' => {'transaction_id' => '123456'}} , {} )
       end
 
     end
