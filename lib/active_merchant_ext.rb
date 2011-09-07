@@ -12,6 +12,14 @@ module ActiveMerchant
       # point live_url to test_url so that even accidentally live_url is never used
       self.live_url = self.test_url
 
+      def add_user(email)
+        create_customer_profile(email)
+      end
+
+      def add_credit_card(options)
+        create_customer_payment_profile(options)
+      end
+
       def create_customer_payment_profile(options)
         Response.new(true, SUCCESS_MESSAGE, {:customer_payment_profile_id => CUSTOMER_PAYMENT_PROFILE_ID,
         }, {} )
